@@ -30,7 +30,6 @@ planningSessions.before.insert(function (userId, doc) {
     jQuery('input.tasks[type=hidden]').each(function () {
         doc.tasks.push(this.value);
     });
-    debugger;
 
     doc.createdAt = moment().toDate();
     doc.createdBy = userId;
@@ -44,7 +43,6 @@ AutoForm.addHooks('insertPlanningSession', {
 
     },
     onSubmit: function (insertDoc, updateDoc, currentDoc) {
-        debugger;
         console.log(arguments);
         return false;
     },

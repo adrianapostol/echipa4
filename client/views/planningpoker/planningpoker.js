@@ -23,7 +23,6 @@ Template.planningpoker.helpers({
 
 Template.planningpoker.events({
     'submit #chatSubmit':function(e){
-        debugger;
         e.preventDefault();
         var a = {
             name: 'Alex',
