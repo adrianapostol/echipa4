@@ -7,10 +7,9 @@
         <h4>
             Be SMART and
             {{#if currentUser}}
-            <a href="{{ pathFor 'tasklist' }}" class="btn btn-primary navbar-btn">Start estimate</a>
+            <a href="{{ pathFor 'planninglist' }}" class="btn btn-primary navbar-btn">Start estimate</a>
             {{else}}
             <a href="{{ pathFor 'atSignUp' }}" class="btn btn-primary navbar-btn">Register</a>
-
             {{/if}}
 
         </h4>

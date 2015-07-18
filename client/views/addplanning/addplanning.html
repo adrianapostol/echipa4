@@ -1,0 +1,19 @@
+<template name="addplanning">
+    <div class="template-addplanning">
+        <div class="page-header">
+            <h1>Add a Planning Session</h1>
+        </div>
+        <div>
+            {{#autoForm collection="planningSessions" doc=this id="insertPlanningSession" type="insert"}}
+            <fieldset>
+                {{> afQuickField name='sessionName'}}
+                {{> afQuickField name='sessionDescription'}}
+                {{> afQuickField name='taskDescription' rows=6}}
+                {{> afQuickField name='participant'}}
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Insert</button>
+            {{/autoForm}}
+        </div>
+
+    </div>
+</template>
