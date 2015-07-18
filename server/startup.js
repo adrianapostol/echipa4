@@ -1,6 +1,6 @@
 // create default task if none exist
-if (Tasks.find().count() === 0) {
-    Tasks.insert(
+if (tasks.find().count() === 0) {
+    tasks.insert(
         {
             taskId: 'UID1',
             taskName: 'Task name',
