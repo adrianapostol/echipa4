@@ -3,7 +3,10 @@
         <div class="page-header">
             <h1>Tasks</h1>
         </div>
-
-
+        <ul>
+            {{#each tasks}}
+                {{>task_item}}
+            {{/each}}
+        </ul>
     </div>
 </template>
