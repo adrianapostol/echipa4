@@ -115,33 +115,19 @@
                     <div class="row chat">
                         <div class="col-md-12 messages">
                             <ol>
-                                <li>
-                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
-                                    <div class="comment">
-                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
-                                    <div class="comment">
-                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
-                                    <div class="comment">
-                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
-                                    <div class="comment">
-                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
-                                    </div>
-                                </li>
+                                {{#if chatMessages}}
+                                    {{#each chatMessages}}
+                                        {{>chat_item}}
+                                    {{/each}}
+                                {{else}}
+                                    <li><p>No messages. Start conversation</p></li>
+
+                                {{/if}}
                             </ol>
                         </div>
+                        <form id="chatSubmit">
                         <input type="text" placeholder="Enter Message" id="enterMessage"/>
+                        </form>
                     </div>
                 </div>
             </div>
