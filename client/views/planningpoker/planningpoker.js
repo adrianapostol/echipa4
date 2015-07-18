@@ -4,7 +4,7 @@ Template.dashboard.rendered = function() {
 
 Template.planningpoker.helpers({
     chatMessages: function(){
-        return chatSessions.find();
+        return chatSessions.find({}, {sort: {createdAt: -1}});
     },
 
     moreThanZero: function(messages) {
@@ -32,7 +32,7 @@ Template.planningpoker.events({
             createdAt: new Date()
 
         };
-
+        $('#enterMessage').val("");
         chatSessions.insert(a);
         return false;
     }
