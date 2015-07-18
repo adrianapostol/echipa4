@@ -3,7 +3,17 @@
         <div class="page-header">
             <h1>Add Task</h1>
         </div>
-
-
+        <div>
+            {{#autoForm collection="tasks" doc=this id="insertTaskList" type="insert"}}
+            <fieldset>
+                {{> afQuickField name='taskId'}}
+                {{> afQuickField name='taskName'}}
+                {{> afQuickField name='taskDescription' rows=6}}
+                {{> afQuickField name='participant'}}
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Insert</button>
+            {{/autoForm}}
+        </div>
     </div>
+
 </template>
