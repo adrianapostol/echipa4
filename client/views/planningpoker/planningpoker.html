@@ -5,7 +5,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <div class="mainContentWrapper">
                         <div class="row play-summary">
                             <div class="col-md-2 story-counter">
@@ -52,55 +52,96 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row card-selection">
                         <div class="col-md-12 row">
-                            <div class="card2 col-md-2">
-                               <p>1</p>
+                            <div class="card2 col-md-2" data-value="1">
+                               <p data-value="1">1</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>2</p>
+                            <div class="card2 col-md-2" data-value="2">
+                                <p data-value="2">2</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>3</p>
+                            <div class="card2 col-md-2" data-value="3">
+                                <p data-value="3">3</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>5</p>
+                            <div class="card2 col-md-2" data-value="5">
+                                <p data-value="5">5</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>8</p>
+                            <div class="card2 col-md-2" data-value="8">
+                                <p data-value="8">8</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>13</p>
+                            <div class="card2 col-md-2" data-value="13">
+                                <p data-value="13">13</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>21</p>
+                            <div class="card2 col-md-2" data-value="21">
+                                <p data-value="21">21</p>
                             </div>
-                            <div class="card2 col-md-2">
-                                <p>?</p>
+                            <div class="card2 col-md-2" data-value="?">
+                                <p data-value="?">?</p>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <div class="row">
-                        <div class="col-md-12">
-                            Planning poker Store
+                        <div class="col-md-12 median-score">
+                            <p>Planning poker Score</p>
+                            <p id="score">50</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
+                    <div class="row active-players ">
+                        <div class="col-md-12 ">
                             <ul>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
+                                <li>Player 1</li>
+                                <li>Player 2</li>
                                 <li>Player 1</li>
                                 <li>Player 2</li>
 
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            CHAT
+                    <div class="row chat">
+                        <div class="col-md-12 messages">
+                            <ol>
+                                <li>
+                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
+                                    <div class="comment">
+                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
+                                    <div class="comment">
+                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
+                                    <div class="comment">
+                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="commentInfo">amit<small class="commentDateStamp">15/11/2012 @ 7:16am</small></p>
+                                    <div class="comment">
+                                        <p>the css portion is really nice but please provide the html portion also you are using bubble as the class but you need to provide the data of the html .</p>
+                                    </div>
+                                </li>
+                            </ol>
                         </div>
+                        <input type="text" placeholder="Enter Message" id="enterMessage"/>
                     </div>
                 </div>
             </div>

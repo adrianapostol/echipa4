@@ -47,6 +47,7 @@ footer {
 
 .card2{
     background: orange;
+    cursor:pointer;
 }
 
 .card2>p{
@@ -55,6 +56,7 @@ footer {
     color: white;
     font-weight: bold;
     text-align: center;
+    cursor:pointer;
 }
 .story-counter{
     border:1px solid black;
@@ -68,10 +70,95 @@ footer {
     height:50px;
     border: 1px solid black;
     box-sizing: border-box;
+}
 
+.mainContentWrapper{
+    min-height: 600px;
+}
+
+
+.selection{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .counter p{
     line-height: 50px;
     font-size:50px;
+}
+
+/* */
+
+.median-score{
+    height:100px;
+
+
+}
+.median-score p{
+    font-size:16px;
+}
+
+.median-score #score{
+    line-height:30px;
+    font-size:30px;
+    text-align: center;
+}
+
+.active-players{
+    height: 170px;
+    overflow-y: scroll;
+    border:1px solid black;
+}
+
+.chat{
+    height: 450px;
+    box-sizing: border-box;
+    border:1px solid black;
+    margin-top: 20px;
+}
+
+.messages{
+    height: 410px;
+    overflow-y: auto;
+}
+
+.chat ol{
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.commentInfo, .commentDateStamp {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    width: 140px;
+}
+.commentDateStamp {
+    font-size: 10px;
+}
+
+.comment {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 3px 10px;
+    background: #eee;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.comment p {
+    margin: 5px 0;
+}
+
+#enterMessage{
+    position: absolute;
+    bottom: 5px;
+    left: 17px;
+    width: 83%;
 }
