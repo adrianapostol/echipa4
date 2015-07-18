@@ -22,33 +22,13 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 row">
-                                <div class="card col-md-2 ">
-
-                                </div>
-                                <div class="card col-md-2 ">
-
-                                </div>
-                                <div class="card col-md-2 ">
-
-                                </div>
-                                <div class="card col-md-2 ">
-
-                                </div>
-                                <div class="card col-md-2 ">
-
-                                </div>
-                                <div class="card col-md-2 ">
-
-                                </div><div class="card col-md-2 ">
-
-                            </div>
-                                <div class="card col-md-2 ">
-
-                                </div>
-                                <div class="card col-md-2 ">
-
-                                </div>
-
+                                    {{#if voteMessages}}
+                                    {{#each voteMessages}}
+                                         {{>vote_item}}
+                                    {{/each}}
+                                    {{else}}
+                                         No voting. Start Vote
+                                    {{/if}}
                             </div>
                         </div>
                     </div>

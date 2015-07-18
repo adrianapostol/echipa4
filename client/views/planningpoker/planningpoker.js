@@ -46,7 +46,7 @@ Template.planningpoker.events({
         e.preventDefault();
         var a = {
             name: Meteor.user().emails[0].address,
-            value: $(e.target).data('value'),
+            vote: $(e.target).data('value'),
             planningSessionId: Session.get('planningSessionId') || "0",
             taskId: Session.get('taskId') || "0",
             createdAt: new Date()
