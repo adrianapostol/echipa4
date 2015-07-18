@@ -5,10 +5,8 @@
 # but you can also edit it by hand.
 
 meteor-platform
-# autopublish
 insecure
 webix:webix
-# iron:router
 accounts-password
 tmeasday:gravatar
 meteorhacks:flow-layout
@@ -19,3 +17,16 @@ todda00:friendly-slugs
 fourseven:scss
 momentjs:moment
 dburles:collection-helpers
+
+reactive-var
+copleykj:jquery-autosize
+peerlibrary:blaze-components
+jquery
+kevohagan:sweetalert
+fortawesome:fontawesome
+aldeed:autoform
+
+useraccounts:unstyled
+matb33:collection-hooks
+tmeasday:presence
+iron:router
