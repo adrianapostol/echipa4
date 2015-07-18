@@ -9,22 +9,6 @@
     <div class="breif">
         <p><strong>Welcome to SpaceTalk.</strong> SpaceTalk is made for team communication, and we've created one for you to get you started.</p>
     </div>
-    <div class="content-inner-form">
-        {{#if currentUser}}
-        <h3>Teams</h3>
-        {{#if teams}}
-        <ul>
-            {{#each teams}}
-            {{> teamLink}}
-            {{/each}}
-        </ul>
-        {{else}}
-        <p>Looks like you don't have access to an team.</p>
-        {{/if}}
-        {{else}}
-        {{> atForm state='signIn'}}
-        {{/if}}
-    </div>
     {{else}}
     <div class="content-inner-form">
         {{> atForm state='signIn'}}
