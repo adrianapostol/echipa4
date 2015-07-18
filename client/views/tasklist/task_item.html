@@ -1,10 +1,13 @@
 <template name="task_item">
-    <li>
-        <input type="checkbox" />
-        <p>{{taskId}}</p>
-        <p>{{taskName}}</p>
-        <p>{{taskDescription}}</p>
+    <tr >
+        <td><input type="checkbox" /></td>
+        <td>{{taskId}}</td>
+        <td>{{taskName}}</td>
+        <td>{{taskDescription}}</td>
+        <td><button type="button" class="btn btn-warning">View</button></td>
+        <td><button type="button" class="btn btn-warning">Edit</button></td>
+        <td><button type="button" class="btn btn-danger">Delete</button></td>
 
-    </li>
+    </tr>
 
 </template>
