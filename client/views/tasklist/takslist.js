@@ -1,7 +1,8 @@
-Template.tasklist.rendered = function() {
+Template.tasklist.rendered = function () {
+    Session.set('selectedTasks', {});
 };
 Template.tasklist.helpers({
-    tasks: function(){
+    tasks: function () {
         return tasks.find();
     }
 });
