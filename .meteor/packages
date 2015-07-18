@@ -5,6 +5,17 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
+# autopublish
 insecure
 webix:webix
+# iron:router
+accounts-password
+tmeasday:gravatar
+meteorhacks:flow-layout
+meteorhacks:flow-router
+mizzao:user-status
+useraccounts:core
+todda00:friendly-slugs
+fourseven:scss
+momentjs:moment
+dburles:collection-helpers
