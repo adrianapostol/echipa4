@@ -4,9 +4,13 @@
         <td>{{taskId}}</td>
         <td>{{taskName}}</td>
         <td>{{taskDescription}}</td>
-        <td><button type="button" class="btn btn-success">View</button></td>
-        <td><button type="button" class="btn btn-success" disabled="disabled">Edit</button></td>
-        <td><button type="button" class="btn btn-danger">Delete</button></td>
+        <td>{{#if participant}}
+                <i class="fa fa-check-circle-o"></i> yes
+            {{else}}
+             <i class="fa fa-times-circle-o"></i> no
+            {{/if}}</td>
+        <td><button type="button" class="btn btn-success" disabled="disabled" >Edit</button></td>
+        <td><button type="button" class="btn btn-danger delete">Delete</button></td>
 
     </tr>
 

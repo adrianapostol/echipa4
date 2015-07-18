@@ -15,5 +15,15 @@ body {
 }
 
 footer {
-    background: lightyellow;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+.container{
+    padding-bottom: 50px;
+    box-sizing: content-box;
 }
