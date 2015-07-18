@@ -36,7 +36,7 @@
                         <tbody>
                         {{#each users}}
                         <tr>
-                            <td><input type="checkbox" name="participants[]" class="check" value="{{_id}}"/></td>
+                            <td><input type="checkbox" name="participants[]" class="participants" value="{{_id}}"/></td>
                             <td>{{#each emails}}
                                     {{address}}<br >
                                 {{/each}}</td>
@@ -45,7 +45,7 @@
                         </tbody>
                     </table>
 
-                    {{> afQuickField name='scheduledOn' type='bootstrap-datetimepicker'}}
+                    {{> afQuickField name='scheduledOn' type="datetime-local"}}
                     {{> afQuickField name='emailNotify' }}
                 </div>
             </div>
@@ -58,7 +58,7 @@
 </template>
 <template name="task_item_show">
     <tr>
-        <td>{{taskId}}<input type="hidden" name="tasks[]" value="{{_id}}"/></td>
+        <td>{{taskId}}<input type="hidden" name="tasks[]" class="tasks" value="{{_id}}"/></td>
         <td>{{taskName}}</td>
     </tr>
 </template>
