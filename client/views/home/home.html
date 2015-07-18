@@ -1,23 +1,10 @@
 <template name="home">
-    {{#content}}
-    <!--<p>This is the homepage here should a user be able to login. When he's logged in he should be able to select the team on which he has access to.-->
-    <!--For the time being every member has access to every team which means that a logged in user should see all the teams here. The <a href="{{pathFor 'teamHome' team="public" }}">public team</a>  gets created by default</p>-->
-    <!--<p>If you have ever started an older version of SpaceTalk please clear you database first after that you can login with admin/admin.</p>-->
-    <!--{{> atForm state='signIn'}}-->
-    <!--Once you log in, you will automatically be redirected to the backend interface.-->
-    {{#if currentUser}}
-    <div class="breif">
-        <p><strong>Welcome to SpaceTalk.</strong> SpaceTalk is made for team communication, and we've created one for you to get you started.</p>
+    <div class="template-home">
+        <div class="page-header">
+            <h1>Welcome to Project Title</h1>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
     </div>
-    {{else}}
-    <div class="content-inner-form">
-        {{> atForm state='signIn'}}
-    </div>
-    {{/if}}
-
-    {{/content}}
-</template>
-
-<template name="teamLink">
-    <li><a href="{{pathFor 'teamHome' team=slug }}">{{name}}</a></li>
 </template>
