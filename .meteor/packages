@@ -23,3 +23,5 @@ yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
 aldeed:simple-schema
+aldeed:autoform-bs-datetimepicker
+tsega:bootstrap3-datetimepicker

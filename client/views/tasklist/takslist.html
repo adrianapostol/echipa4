@@ -23,9 +23,9 @@
         </table>
 
         <div>
-            <a  class="btn btn-primary" href="{{ pathFor 'addtask' }}"> <i class="fa fa-plus-circle"></i> Add new task</a>
+            <a class="btn btn-primary" href="{{ pathFor 'addtask' }}"> <i class="fa fa-plus-circle"></i> Add new task</a>
             <p>Check the box infront of the task ID and press the button "Create Story Planning Session" to create a Planning Session</p>
-            <a class="btn btn-primary"  href="{{ pathFor 'addplanning' }}">Create Story Planning Session</a>
+            <a class="btn btn-primary {{disabledCreateStory}}" href="{{ pathFor 'addplanning' }}">{{disabledCreateStory}} Create Story Planning Session</a>
 
 
         </div>
