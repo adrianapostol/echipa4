@@ -3,9 +3,18 @@
         <td>{{sessionName}}</td>
         <td>{{prettifyDate scheduledOn}}</td>
         <td>{{prettifyDate createdAt}}</td>
-        <td>{{createdBy}}</td>
+        <td>{{createdByUserName}}</td>
         <td>{{totalPoints}}</td>
-        <td><button type="button" class="btn btn-success">Join Session</button></td>
+        <td>{{#if isParticipant}}
+                {{#if isCreator}}
+                    <button type="button" class="btn btn-success">Start Session</button>
+                {{ else }}
+                    <button type="button" class="btn btn-success">Join Session</button>
+                {{/if}}
+            {{ else }}
+            <button type="button" class="btn btn-warning" disabled="disabled">You are not invited</button>
+        {{/if}}
+        </td>
     </tr>
 
 </template>

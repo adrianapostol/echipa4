@@ -24,7 +24,7 @@ Template.addplanning.events({
 planningSessions.before.insert(function (userId, doc) {
     doc.tasks = [];
     doc.participants = [];
-    jQuery('input.participants[type=hidden]').each(function () {
+    jQuery('input.participants[type=checkbox]:checked').each(function () {
         doc.participants.push(this.value);
     });
     jQuery('input.tasks[type=hidden]').each(function () {
