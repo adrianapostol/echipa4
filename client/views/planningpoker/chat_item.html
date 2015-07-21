@@ -9,7 +9,9 @@
 </template>
 
 <template name="vote_item">
-    <div class="card col-md-2 ">
-        {{vote}}
+    <div class="card-vote{{myVoteCard}} col-md-2 ">
+        {{#if showVote}}
+             <p data-value = "{{vote}}">{{vote}}</p>
+        {{/if}}
     </div>
 </template>

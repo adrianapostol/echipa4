@@ -38,19 +38,24 @@ footer {
     min-height: 870px;
 }
 
-.card, .card2{
+.card,
+.card2,
+.card-votemy,
+.card-votethey{
     width:100px;
     height:100px;
     background:red;
     border: 5px solid white;
 }
 
-.card2{
+.card2,
+.card-votemy {
     background: orange;
     cursor:pointer;
 }
 
-.card2>p{
+.card2 > p,
+.card-votemy > p {
     line-height: 90px;
     font-size: 50px;
     color: white;

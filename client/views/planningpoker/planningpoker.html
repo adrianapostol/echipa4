@@ -13,11 +13,11 @@
                                 <p>{{storyNumbers}}</p>
                             </div>
                             <div class="col-md-8">
-                                <p>Story description</p>
-                                <p>1/10</p>
+                                <p>{{storyName}}</p>
+                                <p>{{storyDescription}}</p>
                             </div>
                             <div class="col-md-2 counter" >
-                                <p>10s</p>
+                                <p>{{storyTimer}}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -72,23 +72,12 @@
                     <div class="row active-players ">
                         <div class="col-md-12 ">
                             <ul>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-                                <li>Player 1</li>
-                                <li>Player 2</li>
-
+                                {{#each users}}
+                                   <li>{{#each emails}}
+                                            {{address}}<br >
+                                        {{/each}}
+                                    </li>
+                                {{/each}}
                             </ul>
                         </div>
                     </div>
