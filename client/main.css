@@ -55,6 +55,7 @@ footer {
 }
 
 .card2 > p,
+.card-votethey > p,
 .card-votemy > p {
     line-height: 90px;
     font-size: 50px;

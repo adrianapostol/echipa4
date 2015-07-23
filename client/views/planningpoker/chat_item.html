@@ -12,6 +12,9 @@
     <div class="card-vote{{myVoteCard}} col-md-2 ">
         {{#if showVote}}
              <p data-value = "{{vote}}">{{vote}}</p>
+            {{#if isNotMe }}
+            <span style="font-size: 10px; clear:both;  margin-top: -31px;  position: absolute;  color: white;  margin-left: -10px;">{{name}}</span>
+            {{/if}}
         {{/if}}
     </div>
 </template>

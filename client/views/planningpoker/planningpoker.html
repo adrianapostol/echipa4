@@ -17,7 +17,10 @@
                                 <p>{{storyDescription}}</p>
                             </div>
                             <div class="col-md-2 counter" >
-                                <p>{{storyTimer}}</p>
+                                <span>{{storyTimer}}Time</span><br />
+                                {{#if isCreator}}
+                                    <button class="reveal btn btn-primary">Reveal Cards</button>
+                                 {{/if}}
                             </div>
                         </div>
                         <div class="row">

@@ -25,3 +25,4 @@ aldeed:autoform
 aldeed:simple-schema
 aldeed:autoform-bs-datetimepicker
 tsega:bootstrap3-datetimepicker
+reactive-var

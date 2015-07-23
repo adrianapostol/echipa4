@@ -12,6 +12,12 @@ Template.planningpoker.helpers({
     users: function () {
         return Users.find({});
     },
+
+    isCreator: function () {
+        return true;
+        //planningSessions.findOne({}).createdBy == Meteor.userId();
+    },
+
     storyNumbers: function () {
         var currentTask = (Session.get('currentTaskPosition') || 0) + 1;
         return currentTask + '/' + (tasks.find().fetch().length || 0);
@@ -80,6 +86,14 @@ Template.planningpoker.events({
     },
     'click .card-votemy': function (e) {
         e.preventDefault();
+        var _oFindRevealVote = {
+            planningSessionId: Session.get('planningSessionId') || "0",
+            taskId: Session.get('taskId') || "0"
+        };
+        if (localSession.find(_oFindRevealVote).count()) {
+            alert('vote was revealed');
+            return false;
+        }
         var _vote = $(e.target).data('value') || $(e.target).find('p').data('value');
         if (_vote) {
             var _oFindVote = {
@@ -90,6 +104,17 @@ Template.planningpoker.events({
                 voteRound: Session.get('voteRound') || 0
             };
             voteSessions.remove({_id: voteSessions.findOne(_oFindVote)._id});
+        }
+        return false;
+    },
+    'click .reveal': function (e) {
+        e.preventDefault();
+            var _oFindRevealVote = {
+                planningSessionId: Session.get('planningSessionId') || "0",
+                taskId: Session.get('taskId') || "0"
+            };
+        if (!localSession.find(_oFindRevealVote).count()) {
+            localSession.insert(_oFindRevealVote);
         }
         return false;
     }
